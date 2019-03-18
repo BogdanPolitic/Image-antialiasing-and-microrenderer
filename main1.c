@@ -20,7 +20,7 @@ int main(int argc, char * argv[]) {
 //DO NOT MODIFY THIS FILE
 	image im;
 //DO NOT MODIFY THIS FILE
-	initialize(&im);
+	initialize(&im, atoi(argv[2]), atoi(argv[3]));
 //DO NOT MODIFY THIS FILE
 	struct timespec start, finish;
 	double elapsed;
