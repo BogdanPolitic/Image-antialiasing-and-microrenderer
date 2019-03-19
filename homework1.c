@@ -11,10 +11,10 @@ int num_threads;
 int resolution;
 
 int distance(image *im, int x0, int y0) {
-	return floor(((float) abs(im->eqA * ((float) x0 + 0.5) + im->eqB * ((float) y0 + 0.5) + 0) / sqrt(pow(im->eqA, 2) + pow(im->eqB, 2))));
+	return floor(((float) abs(im->eqA * ((float) x0 + 0.5) + im->eqB * ((float) y0 + 0.5) + im->eqC) / sqrt(pow(im->eqA, 2) + pow(im->eqB, 2))));
 }
 
-void initialize(image *im, char* a, char* b) {
+void initialize(image *im, char* a, char* b, char* c) {
 	int i;
 
 	im->type = 5;
@@ -22,7 +22,7 @@ void initialize(image *im, char* a, char* b) {
 	im->colorsNo = 255;
 	im->eqA = atoi(a);
 	im->eqB = atoi(b);
-	im->eqC = 0;
+	im->eqC = atoi(c);
 
 	im->imgMatrix = (unsigned char**)malloc(im->columnsNo * sizeof(unsigned char*));
 	for (i = 0; i < im->columnsNo; i++) {

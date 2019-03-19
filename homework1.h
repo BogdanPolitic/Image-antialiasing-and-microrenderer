@@ -10,7 +10,7 @@ typedef struct {
 	float eqA, eqB, eqC;
 }image;
 
-void initialize(image *im, char* a, char* b);
+void initialize(image *im, char* a, char* b, char* c);
 void render(image *im);
 void writeData(const char * fileName, image *img);
 

@@ -11,7 +11,7 @@ int main(int argc, char * argv[]) {
 	//argv[1] output
 	//argv[2] resolution
 	//argv[3] num_threads
-	if(argc < 6) {
+	if(argc < 7) {
 		printf("Incorrect number of arguments\n");
 		exit(-1);
 	}
@@ -20,7 +20,7 @@ int main(int argc, char * argv[]) {
 //DO NOT MODIFY THIS FILE
 	image im;
 //DO NOT MODIFY THIS FILE
-	initialize(&im, argv[4], argv[5]);
+	initialize(&im, argv[4], argv[5], argv[6]);
 //DO NOT MODIFY THIS FILE
 	struct timespec start, finish;
 	double elapsed;
