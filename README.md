@@ -21,3 +21,6 @@ The [width] is the output image resized width.
 The [a-coefficient], [b-coefficient], [c-coefficient] are the liniar equation coefficients a, b, c respectively. The liniar equation is expressed like this:
 a * x + b * y + c = 0.
 In the "output.pgm" example image, a = -1, b = 2, c = 200. So the program running command for the 400x400 output image was the following: "./homework1 output.pgm 400 4 -1 2 200".
+
+
+Full information about the programs functioning are found in the "Task.pdf".
