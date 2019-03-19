@@ -79,3 +79,4 @@ void writeData(const char * fileName, image *img) {
 	fclose(f);
 }
 
+ 

@@ -15,3 +15,4 @@ void render(image *im);
 void writeData(const char * fileName, image *img);
 
 #endif /* HOMEWORK_H1 */
+ 

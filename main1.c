@@ -37,3 +37,4 @@ int main(int argc, char * argv[]) {
 	writeData(argv[1], &im);
 	return 0;
 }
+ 
