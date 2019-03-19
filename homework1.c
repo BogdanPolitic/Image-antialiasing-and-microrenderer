@@ -14,14 +14,24 @@ int distance(image *im, int x0, int y0) {
 	return floor(((float) abs(im->eqA * ((float) x0 + 0.5) + im->eqB * ((float) y0 + 0.5) + 0) / sqrt(pow(im->eqA, 2) + pow(im->eqB, 2))));
 }
 
-void initialize(image *im, int a, int b) {
+void initialize(image *im, char* a, char* b) {
 	int i;
+
+	if (a[0] == '-')
+		im->eqA = -atoi(a);
+	else
+		im->eqA = atoi(a);
+
+	if (b[0] == '-')
+		im->eqB = -atoi(b);
+	else
+		im->eqB = atoi(b);
 
 	im->type = 5;
 	im->linesNo = im->columnsNo = resolution;
 	im->colorsNo = 255;
-	im->eqA = a;
-	im->eqB = b;
+	//im->eqA = a;
+	//im->eqB = b;
 	im->eqC = 0;
 
 	im->imgMatrix = (unsigned char**)malloc(im->columnsNo * sizeof(unsigned char*));
