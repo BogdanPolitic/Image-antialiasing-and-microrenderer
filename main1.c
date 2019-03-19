@@ -16,11 +16,11 @@ int main(int argc, char * argv[]) {
 		exit(-1);
 	}
 	resolution = atoi(argv[2]);
-	num_threads = atoi(argv[3]);
+	num_threads = atoi(argv[6]);
 //DO NOT MODIFY THIS FILE
 	image im;
 //DO NOT MODIFY THIS FILE
-	initialize(&im, argv[4], argv[5], argv[6]);
+	initialize(&im, argv[3], argv[4], argv[5]);
 //DO NOT MODIFY THIS FILE
 	struct timespec start, finish;
 	double elapsed;
